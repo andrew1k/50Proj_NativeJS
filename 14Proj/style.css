@@ -10,8 +10,8 @@
 }
 
 body {
-    background-color: #3494e4;
-    color: #fff;
+    background-color: #e4e4e7;
+    color: #333;
     font-family: 'Montserrat', sans-serif;
     display: flex;
     flex-direction: column;
@@ -29,8 +29,9 @@ h3 {
 }
 
 .cup {
-    background-color: #fff;
-    border: 4px solid var(--border-color);
+    background-color: #e4e4e7;
+    border: 1px solid #e4e4e7;
+    box-shadow: 10px 10px 21px #d3d3d6, -10px -10px 21px #fff;
     color: var(--border-color);
     border-radius: 0 0 40px 40px;
     height: 330px;
@@ -45,27 +46,30 @@ h3 {
     width: 50px;
     height: 95px;
     border-radius: 0 0 15px 15px;
-    background-color: rgba(255,255,255,0.9);
+    background-color: #e4e4e7;
+    box-shadow: 5px 5px 21px #d3d3d6, -5px -5px 21px #fff;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 12px;
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin: 5px;
+    margin: 6px;
     transition: 0.3s ease;
 }
 
 .cup.cup-small.full {
     background-color: var(--fill-color);
     color: #fff;
+    box-shadow: 5px 5px 21px #d3d3d6, -5px -5px 21px #fff;
 }
 
 .cups {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
+    /*flex-wrap: nowrap;*/
     align-items: center;
     justify-content: center;
-    width: 280px;
+    width: 500px;
 }
 
 .remained {
@@ -89,6 +93,9 @@ h3 {
 
 .percentage {
     background-color: var(--fill-color);
+    border: 1px solid var(--fill-color);
+    box-shadow: 5px 5px 21px #d3d3d6, -5px -5px 21px #fff;
+    color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
