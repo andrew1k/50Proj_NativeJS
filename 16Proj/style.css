@@ -42,6 +42,7 @@ body {
     padding: 8px 12px;
     position: absolute;
     bottom: 20px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5),-5px -5px 10px rgba(246, 247, 251,0.3);
 }
 
 .toggle:focus {
@@ -53,12 +54,14 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    padding: 10px;
 }
 
 .clock {
     position: relative;
     width: 200px;
     height: 200px;
+    border-radius: 50%;
 }
 
 .needle {
@@ -70,6 +73,7 @@ body {
     width: 3px;
     transform-origin: bottom center;
     transition: all 0.5s ease-in;
+    box-shadow: 5px 5px 10px rgba(246, 247, 251,0.15),-5px -5px 10px rgba(246, 247, 251,0.15);
 }
 
 .needle.hour {
@@ -90,13 +94,14 @@ body {
 
 .center-point {
     background-color: #e74c3c;
-    width: 5px;
-    height: 5px;
+    width: 10px;
+    height: 10px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50%;
+    /*box-shadow: 5px 5px 10px rgba(246, 247, 251,0.3),-5px -5px 10px rgba(246, 247, 251,0.3);*/
 }
 
 .time-date{
