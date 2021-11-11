@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: #d3d3d6;
+    background-color: #b7b7b7;
     margin: 0;
     display: flex;
     align-items: center;
@@ -25,6 +25,7 @@ body {
     border: solid 3px #ffffff;
     background: #fff;
     border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.2), -3px -3px 10px rgba(255,255,255,1);
 }
 
 .fill {
@@ -36,11 +37,11 @@ body {
 }
 
 .hold {
-    border: solid 5px #ccc;
+    border: solid 2px #ccc;
 }
 
 .hovered {
     background-color: #fff;
-    border: dashed #333333;
-    box-shadow: 10px 10px 100px #fff, -10px -10px 100px #fff, 5px 5px 5px rgba(0,0,0,0.5);
+    border: none;
+    box-shadow: 10px 10px 50px #fff, -10px -10px 50px #fff, -10px 10px 50px #fff, 10px -10px 50px #fff;
 }
