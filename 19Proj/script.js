@@ -4,13 +4,37 @@ const increase = document.getElementById('increase')
 const decrease = document.getElementById('decrease')
 const span = document.querySelector('span')
 const clear = document.getElementById('clear')
-let color = document.getElementById('color').value
+// let color = document.getElementById('color').value
 let isPressed = false
 let x
 let y
 let size = 10
+let color
+
+// colorInput.addEventListener('input', ()=>{
+//     // color =  colorInput.value
+// })
+
+setInterval(()=>{
+    color = document.getElementById('color').value
+},500)
 
 
+increase.addEventListener('click', ()=>{
+    size += 2
+    span.innerText = +span.innerText + 2
+})
+decrease.addEventListener('click', ()=>{
+    size -= 2
+    span.innerText = +span.innerText - 2
+    if (span.innerText < 1){
+        alert(`Please don't decrease anymore`)
+        span.innerText = 2
+        size = 2}
+})
+clear.addEventListener('click', ()=>{
+    ctx.clearRect(0,0,canvas.width,canvas.height)
+})
 canvas.addEventListener('mousedown', (e)=> {
     isPressed = true
     x = e.offsetX
@@ -45,3 +69,5 @@ function drawLine(x1, y1, x2, y2) {
     ctx.lineWidth = size * 2
     ctx.stroke()
 }
+
+console.log(span.innerText)
